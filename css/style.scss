@@ -1,0 +1,99 @@
+body{margin: 0px; background-color: slategrey;}
+.wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 65vw;
+    max-width: 830px;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+    .img-left{
+        width: 25vw;
+        height: 500px;
+        img{
+            display: block;
+            width: 100%;
+            height: 320px;
+        }
+
+        input{
+            display: block;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin: 20px auto;
+            width: 85%;
+            text-align: center;
+        }
+
+        a{
+            display: block;
+            text-decoration: none;
+            font-size: 15px;
+            background-color: rgba(255, 68, 0, 0.795);
+            padding: 10px 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin: auto;
+            width: fit-content;
+        }
+    }
+    .info-wrapper{
+        width: 25vw;
+        height: 400px;
+        padding: 50px;
+        background-color: rgb(255, 243, 228);
+
+        hr{border-color: orangered;}
+
+        #name-id{
+            width: 100%;
+            //border: solid green 1px;
+            display: flex;
+            justify-content: space-around;
+
+            #sprite-sm{
+                display: inline;
+                width: 50px;
+                background-color: orangered;
+            }
+
+            #dexId{
+                width: max-content;
+                color: white;
+                background-color: orangered;
+                align-self: center;
+                padding: 15px 8px;
+            }
+
+            #name{
+                width: 70%;
+                color: white;
+                background-color: black;
+                align-self: center;
+                padding: 15px 8px;
+            }
+        }
+
+        #core-info{
+            text-align: center;
+
+            .flex-info{
+                display: flex;
+
+                .fi-item{
+                    width: 50%;
+
+                    &#info{
+                        text-align: left;
+                    }
+                }
+            }
+
+            #flavor{
+                text-align: left;
+            }
+        }
+    }
+}
